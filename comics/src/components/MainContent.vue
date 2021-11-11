@@ -6,19 +6,17 @@
         </div>
       </div>
       <div class="bottomMain">
-          <nav>
-              <a href="#"><img class="imgMain" src="../assets/buy-comics-digital-comics.png" alt=""> DIGITAL COMICS</a>
-              <a href="#"><img class="imgMain" src="../assets/buy-comics-merchandise.png" alt=""> DC MERCHANDISE</a>
-              <a href="#"><img class="imgMain" src="../assets/buy-comics-subscriptions.png" alt=""> SUBSCRIPTION</a>
-              <a href="#"><img class="imgMain" src="../assets/buy-comics-shop-locator.png" alt=""> COMICS SHOP LOCATOR</a>
-              <a href="#"><img class="imgMain" src="../assets/buy-dc-power-visa.svg" alt=""> DC POWER VISA</a>
-          </nav>
+         <icons/>
       </div>
     </div>
 </template>
 
 <script>
+import icons from '../components/icons.vue';
 export default {
+    components: {
+    icons
+  }
 
 }
 </script>
@@ -37,7 +35,7 @@ export default {
         }
         
     }
-    .bottomMain {
+    /*.bottomMain {
         background: #0282F9;
         height: 150px;
         nav {
@@ -57,6 +55,6 @@ export default {
             width: 30px;
             vertical-align: middle;
         }
-    }
+    }*/
 }
 </style>
