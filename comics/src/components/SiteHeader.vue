@@ -35,6 +35,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     img {
         width: 70px;
@@ -47,7 +48,7 @@ export default {
         &.active {
             color:#0282F9;
             border-bottom: 6px solid #0282F9;
-            padding-bottom: 2rem;
+            padding-bottom: 39px;
         }
     }
 }
