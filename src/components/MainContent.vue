@@ -114,7 +114,7 @@ export default {
         background: black;
         h3 {
             color: white;
-            font-size: 7px;
+            font-size: 15px;
             padding-top: 1rem;
         }
         .films {
