@@ -1,9 +1,7 @@
 <template>
-
-  
-    <div>
-          <img :src="image" alt="">
-          <h3>{{titolo}}</h3>
+    <div class="container">
+        <img :src="image" alt="">
+        <h3>{{titolo}}</h3>
     </div>
   
 
@@ -22,11 +20,8 @@ export default {
 
 <style lang="scss">
 .container {
-  display: flex;
-  width: 80%;
-  margin: auto;
   .img {
-    max-width: 100%;
+    width: 10px;
   }
 }
 

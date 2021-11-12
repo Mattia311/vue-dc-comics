@@ -4,6 +4,7 @@
         <div class="films row">
             <film  v-for="movie in movies" :key="movie.series" :image="movie.thumb" :titolo="movie.series" class="col-2"/>
         </div>
+        <button>LOAD MORE</button>
       </div>
       <div class="bottomMain">
          <icons/>
@@ -108,14 +109,40 @@ export default {
 #mainContent {
     width: 100%;
     margin: auto;
+    font-family: 'Roboto', sans-serif;
     .topMain {
         background: black;
         h3 {
             color: white;
+            font-size: 7px;
         }
         .films {
+            width: 80%;
+            margin: auto;
             display: flex;
+            flex-wrap: wrap;
         }
+        .col-2 {
+            padding: 21px;
+            padding-top: 40px;
+            img {
+                width: 150px;
+                height: 189px;
+            }
+
+        }
+        button {
+            width: 190px;
+            height: 45px;
+            left: 236px;
+            background: #0282F9;
+            color: white;
+            border: none;
+            margin-left: 600px;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+            
         
     }
     

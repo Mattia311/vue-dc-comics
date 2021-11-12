@@ -17,6 +17,10 @@
             <a href="#">SHOP</a>
         </div>
     </div>
+    <div class="img-header">
+        <img src="../assets/jumbotron.jpg" alt="">
+        <button>CURRENT SERIES</button>
+        </div>
   </div>
 </template>
 
@@ -28,14 +32,15 @@ export default {
 
 <style lang="scss">
 #siteHeader {
-    width: 80%;
-    margin: auto;
+    font-family: 'Roboto', sans-serif;
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        width: 80%;
+        margin: auto;
     }
     img {
         width: 70px;
@@ -49,6 +54,26 @@ export default {
             color:#0282F9;
             border-bottom: 6px solid #0282F9;
             padding-bottom: 39px;
+        }
+    }
+    .img-header {
+        position: relative;
+        img {
+            width: 100%;
+            margin-bottom: -4px;
+            height: 350px;
+            object-fit: cover;
+            object-position: top;
+        }
+        button {
+            position: absolute;
+            bottom: -22px;
+            width: 190px;
+            height: 45px;
+            left: 236px;
+            background: #0282F9;
+            color: white;
+            border: none;
         }
     }
 }
