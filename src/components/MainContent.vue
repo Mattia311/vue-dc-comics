@@ -1,11 +1,8 @@
 <template>
   <div id="mainContent"> 
-      <div class="topMain">
-        <div class="films">
-            <div class="film" v-for="movie in movies" :key="movie.series">
-                <img :src="movie.thumb" alt="">
-                <h3>{{movie.series}}</h3>
-            </div>
+      <div class="topMain container">
+        <div class="films row">
+            <film  v-for="movie in movies" :key="movie.series" :image="movie.thumb" :titolo="movie.series" class="col-2"/>
         </div>
       </div>
       <div class="bottomMain">
@@ -16,6 +13,7 @@
 
 <script>
 import icons from '../components/icons.vue';
+import film from '../components/movies.vue';
 export default {
     data() {
         return {
@@ -98,7 +96,8 @@ export default {
 
     },
     components: {
-    icons
+    icons,
+    film
   }
 
 
