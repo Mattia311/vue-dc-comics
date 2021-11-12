@@ -115,6 +115,7 @@ export default {
         h3 {
             color: white;
             font-size: 7px;
+            padding-top: 1rem;
         }
         .films {
             width: 80%;
@@ -125,6 +126,7 @@ export default {
         .col-2 {
             padding: 21px;
             padding-top: 40px;
+            width: (100% / 6);
             img {
                 width: 150px;
                 height: 189px;
